@@ -2,10 +2,49 @@
 import sys
 import csv
 
-
 fileName = sys.argv[1]
 chat = open(fileName, 'r') 
 Lines = chat.readlines() 
+
+header = [
+"First Name", 
+"Middle Name", 
+"Surname", 
+"Any Other Previous Surname", 
+"Birth Date (DD/MM/YYYY)", 
+"Gender (M/F)", 
+"Gotra", 
+"Blood Group", 
+"Email", 
+"Mobile", 
+"Education", 
+"Married /Unmarried / Widow / Seperated (M/U/W/S)", 
+"Fathers First Name", 
+"Fathers Middle Name", 
+"Fathers Surname", 
+"Fathers Any Other Surname", 
+"Mothers First Name", 
+"Mothers Middle Name", 
+"Mothers Surname", 
+"(Husband / Wife) First Name", 
+"(Husband / Wife) Middle Name", 
+"(Husband / Wife) Surname", 
+"Number of Sons (Including Alive and Passed Away)", 
+"Number of Daughters (Including Alive and Passed Away)", 
+"Number of Brothers (Including Alive and Passed Away)", 
+"Number of Sisters (Including Alive and Passed Away)", 
+"Temporary Address", 
+"Temporary Address City", 
+"Permanent Address",
+"Permanent Adress City", 
+"Business/ Service /Housewife / Retired  (B/S/H/R)", 
+"Business/ Service Detail",
+"Registered at which Sangh"
+]
+
+with open("Profiles.csv", 'a+') as myfile:
+            wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
+            wr.writerow(header)
 
 profile = []
 for line in Lines:
