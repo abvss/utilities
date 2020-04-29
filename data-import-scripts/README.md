@@ -6,7 +6,7 @@ python whatsapp-to-excel.py WhatsAppChat.txt
 
 ## Output
 
-After runing script you will get Profile.csv
+After runing script you will get *Profiles.csv* as output
 
 ```
 -rw-r--r-- 1 amey amey  17K Apr 29 23:04 WhatsAppChat.txt
