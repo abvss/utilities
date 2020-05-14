@@ -3,6 +3,9 @@
 ```
 python whatsapp-to-excel.py WhatsAppChat.txt
 ```
+```
+python excel-to-db.py
+```
 
 ## Output
 
